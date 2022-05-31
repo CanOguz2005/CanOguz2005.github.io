@@ -1,37 +1,33 @@
-## Welcome to GitHub Pages
+## Welcome to the fitness app
 
-You can use the [editor on GitHub](https://github.com/CanOguz2005/CanOguz2005.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+This app is meant to help you along your fitness journey by providing you with supplement and calorie tracking advice while allowing you to calculate your maximum possible lifts without risk of injury, and by giving you your ideal body weight which should help you keep your goals in track.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### input
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Input is the values about yourself that you must feed this app to recieve the most accurate results, these include
+-weight
+-age
+-height
+-5 rep maximum
+-bodyfat percentage(optional but helps in calculating calorie intake)
 
 ```markdown
-Syntax highlighted code block
+Values recieved
+-Suggested protein intake
+-Suggested creatin intake
+-Your max bench press/squat/deadlift
+-maintenince calories
+-Calories to gain weight
+-Calories to lose weight
+-ideal body weight
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/CanOguz2005/CanOguz2005.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Equations used:
+weight*1.1 for protein
+(weight*30/1000)+1 for creatine
+((Max lift at 5 reps) * 1.1307 + 0.6998) for Max lift
+21.6*(1-(bodyfat/100))*weight + 370.0 for calories using bodyfat percentage
+(13.397*weight) + (4.799*ac) - (5.677*ak) + 88.362 for calories without bodyfat percentage
+bulk = maintenince calories+300;
+cut = maintenince-300;
+(52+(height-152)*0.74803149606) for optimum weight
